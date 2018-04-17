@@ -1,5 +1,5 @@
-const testForShake1 = () => {
-    console.log("testForShake1");
+const testForShake1 = (a) => {
+    console.log(a);
 }
 const testForShake2 = () => {
     console.log("testForShake2");

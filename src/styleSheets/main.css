@@ -1,0 +1,12 @@
+.test{
+    width: 100%;
+    height: 30px;
+    background-color: aquamarine;
+    color: yellow;
+}
+
+.test2{
+    width: 60px;
+    height: 30px;
+    background-color: bisque;
+}

@@ -1,20 +1,50 @@
 {
-  "name": "webpack4",
+  "name": "test-react-bootstrap",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack --mode development",
+    "dev": "webpack-dev-server --mode development --open",
+    "dev.use": "webpack-dev-server --devtool eval --progress --watch --colors --profile --config ./webpack.config.js",
     "build": "webpack --mode production",
+    "build.use": "webpack-dev-server --mode production --progress --config ./webpack.product.config.js",
     "server": "webpack-dev-server --open"
   },
   "author": "tianhuijuan",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^8.3.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^0.28.11",
+    "extract-text-webpack-plugin": "^3.0.2",
     "html-webpack-plugin": "^3.0.7",
-    "webpack": "^4.1.1",
+    "mini-css-extract-plugin": "^0.4.0",
+    "open-browser-webpack-plugin": "^0.0.5",
+    "postcss-cli": "^5.0.0",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-loader": "^2.1.4",
+    "style-loader": "^0.20.3",
+    "webpack": "^4.5.0",
     "webpack-cli": "^2.0.12",
     "webpack-dev-server": "^3.1.1"
+  },
+  "dependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "mini-css-extract-plugin": "^0.4.0",
+    "react": "^16.2.0",
+    "react-bootstrap": "^0.32.1",
+    "react-dom": "^16.2.0",
+    "react-hot-loader": "^4.0.1",
+    "react-router-dom": "^4.2.2",
+    "react-router-transition": "^1.2.1"
   }
 }
