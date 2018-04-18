@@ -1,0 +1,8 @@
+.overflowHid{
+    overflow: hidden;
+}
+.wrapper{
+    color: #fff;
+    min-height: 548px;
+    padding-top: 100px;
+}

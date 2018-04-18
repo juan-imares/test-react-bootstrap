@@ -1,6 +1,9 @@
 import React from 'react';
 import Header from '../components/Header';
-import Block from '../components/Block';
+import Banner from '../components/Banner';
+import Content from '../components/Content';
+import Footer from '../components/Footer';
+import IndexStyle from '../styleSheets/Index.css';
 
 export default class extends React.Component {
     constructor(props) {
@@ -10,8 +13,12 @@ export default class extends React.Component {
     render() {
         return(
             <div>
-                <Header />
-                <Block />
+                <div className={IndexStyle.bg}>
+                    <Header history={this.props.history}/>
+                    <Banner />
+                </div>
+                <Content />
+                <Footer />
             </div>
         )
     }

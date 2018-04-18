@@ -1,0 +1,8 @@
+.bg{
+    background-size: cover;
+    min-height: 600px;
+    text-align: center;
+    position: relative;
+    background-image: url(../assets/images/pc-banner.jpg);
+    background-repeat: no-repeat;
+}

@@ -35,6 +35,20 @@ module.exports = {
                     },
                     "postcss-loader"
                 ]
+            },
+            {
+                test: /\.(png|jpe?g|gif|svg)$/,
+                exclude: /node_modules/,
+                use:[{
+                  loader: 'file-loader',
+                  options:{
+                    name:'images/[name].[hash:5].[ext]'
+                  }
+                }]
+            },
+            {
+                test: /\.(htm|html)$/,
+                use: ['html-withimg-loader']
             }
         ]
     },
