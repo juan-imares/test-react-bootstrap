@@ -1,8 +1,14 @@
-const testForShake1 = (a) => {
-    console.log(a);
-}
-const testForShake2 = () => {
-    console.log("testForShake2");
-}
+import React from 'react';
+import Index from './pages/Index';
 
-export {testForShake1};
+export default class extends React.Component {
+    constructor(props) {
+        super(props)
+    }
+
+    render() {
+        return (
+            <Index />
+        )
+    }
+}

@@ -61,9 +61,9 @@ module.exports = {
             }
         }),
         //自动打开浏览器
-        new OpenBrowserPlugin({
-          url: `http://localhost:3003`,
-        }),
+        // new OpenBrowserPlugin({
+        //   url: `http://localhost:3003`,
+        // }),
         new webpack.HotModuleReplacementPlugin() //热加载插件
     ]
 }
