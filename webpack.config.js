@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin'); //重新生成引用最新打包后的js文件的index.html
 const OpenBrowserPlugin = require('open-browser-webpack-plugin');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin; //可视化形式分析打包内容
 
 module.exports = {
     mode: "development",
@@ -64,6 +65,7 @@ module.exports = {
         // new OpenBrowserPlugin({
         //   url: `http://localhost:3003`,
         // }),
-        new webpack.HotModuleReplacementPlugin() //热加载插件
+        new webpack.HotModuleReplacementPlugin(), //热加载插件
+        new BundleAnalyzerPlugin({ analyzerPort: 3013 })
     ]
 }
